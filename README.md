@@ -1,5 +1,5 @@
 Clases
-'''mermait
+```mermaid
 classDiagram
   direction RL
   class Ejercicio5 {
@@ -20,5 +20,24 @@ classDiagram
     -resultado : Double
   }
   
-  '''
+```
+```mermaid
+graph TD
+    A(Preguntamos al usuario) -->B(Operación aceptada)
+    B -->|Si| C(Solicitamos valores)
+    B -->|No| D(Error)
+    D --> A
+    C --> E{Triángulo}
+    E -->|Si| F(Multiplicamos los valores y dividimos entre 2)
+    F --> Z
+    E -->|No| G{Rectángulo}
+    G -->|Si| H(Multiplicamos los valores)
+    H --> Z
+    G -->|No| J{Pentágono}
+    J -->|Si| I(Solicitamos valor para el lado y lo elevamos al cuadrado y multiplicamos por 1.72)
+    I --> Z
+    J -->|No| K{Hexágono}
+    K --> L(Solicitamos valor para el lado para calcular perímetro y apotema para multiplicarlos entre si y dividirlos entre 2)
+    L --> Z(Resultado)
+```
   
