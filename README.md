@@ -1,5 +1,5 @@
 Clases
-
+'''mermait
 classDiagram
   direction RL
   class Ejercicio5 {
@@ -20,5 +20,5 @@ classDiagram
     -resultado : Double
   }
   
-  
+  '''
   
